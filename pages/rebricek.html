@@ -15,16 +15,17 @@
         th{
                 padding: 10px;
                 border: solid black 3px;
-                background-color: rgb(197, 136, 24);
+                background-color:#002B5B;
+                color: #E4DCCF;
         }
         .poradie{
             text-align: right;
         }
         .podfarbenie{
-            background-color: wheat;
+            background-color: #ea54545e;
         }
         .zelena{
-            background-color: rgb(83, 151, 43);
+            background-color: rgba(77, 126, 48, 0.76);
         }
         p{
             display: inline;
@@ -34,148 +35,198 @@
             margin-right: 8px;
             margin-bottom: 1px;
         }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'NotoSerif';
+            src: url(../Fonts/NotoSerif-Regular.ttf);
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: #002B5B;
+        }
+    
+        body{
+            font-family: 'NotoSerif';
+            background-color:#E4DCCF;
+            color: #002B5B;    
+        }
+        main{
+            margin: 10px;
+            border: 10px;
+        }
+        nav ul li{ 
+            list-style: none;
+            display: inline-block;
+            float: left;
+            line-height: 60px;
+        }
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+            color: #F9F5EB;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #EA5455;
+        }
+        h2{
+            margin-bottom: 5px;
+        }
 
     </style>
 </head>
 <body>
-    <a href="../">Domov</a>
-    <h1>Rebríček najlepších filmov</h1>
+    <nav>
+        <ul>
+            <li><a href="../">Domov</a></li>
+            <li><a href="rebricek.html">Rebríček najlepších filmov</a></li>
+            <li><a href="add-review.html">Pridať recenziu</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h1>Rebríček najlepších filmov</h1>
     
-    <table>
-        <thead>
-            <tr>
-                <th>poradie</th>
-                <th>názov filmu</th>
-                <th>rok vydania</th>
-                <th>hodnotenie v percentách</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="poradie">1.</td>
-                <td>Vykúpenie z väznice Shawshank</td>
-                <td>1994</td>
-                <td class="zelena">95,3 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">2.</td>
-                <td>Forrest Gump</td>
-                <td>1994</td>
-                <td class="zelena">94,5 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">3.</td>
-                <td>Zelená míľa</td>
-                <td>1999</td>
-                <td>92,9 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">4.</td>
-                <td>Sedem</td>
-                <td>1995</td>
-                <td>92,4 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">5.</td>
-                <td>Prelet nad kukučím hniezdom</td>
-                <td>1975</td>
-                <td>92,5 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">6.</td>
-                <td>Schindlerov zoznam</td>
-                <td>1993</td>
-                <td>92,3 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">7.</td>
-                <td>Krstný otec </td>
-                <td>1972</td>
-                <td>91,8 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">8.</td>
-                <td>Dvanásť rozhnevaných mužov</td>
-                <td>1957</td>
-                <td>91,4 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">9.</td>
-                <td>Nedotknuteľní</td>
-                <td>2011</td>
-                <td>91,3 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">10.</td>
-                <td>Pelíšky</td>
-                <td>1999</td>
-                <td>91,2 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">11.</td>
-                <td>Terminátor 2: Deň zúčtovania</td>
-                <td>1991</td>
-                <td>90,9 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">12.</td>
-                <td>Pulp Fiction: Historky z podsvetia</td>
-                <td>1994</td>
-                <td>90,7 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">13.</td>
-                <td>Krstný otec II </td>
-                <td>1974</td>
-                <td>90,8 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">14.</td>
-                <td>Pán prsteňov: Spoločenstvo Prsteňa</td>
-                <td>2001</td>
-                <td>90,6 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">15.</td>
-                <td>Pán prsteňov: Návrat kráľa</td>
-                <td>2003</td>
-                <td>90,6 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">16.</td>
-                <td>Mlčanie jahniat</td>
-                <td>1991</td>
-                <td>90,5 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">17.</td>
-                <td>Vtedy na Západe</td>
-                <td>1968</td>
-                <td>90,5 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">18.</td>
-                <td>Temný rytier</td>
-                <td>2008</td>
-                <td>90,4 &#37</td>
-            </tr>
-            <tr>
-                <td class="poradie">19.</td>
-                <td>Gran Torino</td>
-                <td>2008</td>
-                <td>90,3 &#37</td>
-            </tr>
-            <tr class="podfarbenie">
-                <td class="poradie">20.</td>
-                <td>Matrix</td>
-                <td>1999</td>
-                <td>90,2 &#37</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Top film: Vykúpenie z väznice Shawshank</h2>
-   <img src="shawshank.jpg" alt="Vykúpenie z väznice Shawshank" width="400px" class="float"> <p>Mladého a úspešného viceprezidenta banky Andyho Dufresnea (Tim Robbins) v roku 1946 odsúdia na doživotie za vraždu svojej manželky a jej milenca. On sám síce tvrdí, že je nevinný, ale nedokáže to na súde preukázať. Dostane sa do väznice Shawshank, kde sú všetci na doživotie. Dočká sa šikanovania, depresií, tvrdej práce, ale postupne sa adaptuje a spriatelí sa s Redom (Morgan Freeman), černošským väzňom, ktorý ako jediný priznáva, že je vinný. Po nejakom čase pomôže Andy jednému dozorcovi vyriešiť problém s daňovým priznaním. A netrvá dlho a stane sa vyhľadávaným daňovým poradcom nielen všetkých dozorcov, ale predovšetkým riaditeľa väznice, pokryteckého a zákerného Nortona (Bob Gunton). S Andyho pomocou rozbehne Norton neuveriteľné finančné machinácie a podnikateľské aktivity, na ktorých fantasticky zarába. Andy sa tak stane prominentným väzňom. Nečakaný obrat nastane vo chvíli, keď jeden z nových väzňov, mladý Tommy, rozpráva Andymu o človeku, s ktorým sedel v inej väznici, a ten sa priznal, že zavraždil Andyho ženu a jej milenca. Andy chce okamžite obnoviť svoj proces, ale narazí na tvrdý odpor riaditeľa Nortona. Ten si nemôže dovoliť o Andyho prísť, ale nielen pre svoje kšefty, ale ja zo strachu, že Andy by mohol na slobode prehovoriť o riaditeľových podvodoch. Andy sa tak znovu ocitne na dne, ale nie je taký hlúpy, ani bezmocný, ako si Norton myslí. Dokáže totiž využiť svoje schopnosti finančného poradcu najmä pre seba, a tak má teraz v rukách kľúč k veľkému majetku. Po celý čas si tiež tajne kope dieru, aby z väznice ušiel...</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>poradie</th>
+                    <th>názov filmu</th>
+                    <th>rok vydania</th>
+                    <th>hodnotenie v percentách</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="poradie">1.</td>
+                    <td>Vykúpenie z väznice Shawshank</td>
+                    <td>1994</td>
+                    <td class="zelena">95,3 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">2.</td>
+                    <td>Forrest Gump</td>
+                    <td>1994</td>
+                    <td class="zelena">94,5 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">3.</td>
+                    <td>Zelená míľa</td>
+                    <td>1999</td>
+                    <td>92,9 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">4.</td>
+                    <td>Sedem</td>
+                    <td>1995</td>
+                    <td>92,4 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">5.</td>
+                    <td>Prelet nad kukučím hniezdom</td>
+                    <td>1975</td>
+                    <td>92,5 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">6.</td>
+                    <td>Schindlerov zoznam</td>
+                    <td>1993</td>
+                    <td>92,3 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">7.</td>
+                    <td>Krstný otec </td>
+                    <td>1972</td>
+                    <td>91,8 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">8.</td>
+                    <td>Dvanásť rozhnevaných mužov</td>
+                    <td>1957</td>
+                    <td>91,4 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">9.</td>
+                    <td>Nedotknuteľní</td>
+                    <td>2011</td>
+                    <td>91,3 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">10.</td>
+                    <td>Pelíšky</td>
+                    <td>1999</td>
+                    <td>91,2 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">11.</td>
+                    <td>Terminátor 2: Deň zúčtovania</td>
+                    <td>1991</td>
+                    <td>90,9 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">12.</td>
+                    <td>Pulp Fiction: Historky z podsvetia</td>
+                    <td>1994</td>
+                    <td>90,7 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">13.</td>
+                    <td>Krstný otec II </td>
+                    <td>1974</td>
+                    <td>90,8 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">14.</td>
+                    <td>Pán prsteňov: Spoločenstvo Prsteňa</td>
+                    <td>2001</td>
+                    <td>90,6 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">15.</td>
+                    <td>Pán prsteňov: Návrat kráľa</td>
+                    <td>2003</td>
+                    <td>90,6 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">16.</td>
+                    <td>Mlčanie jahniat</td>
+                    <td>1991</td>
+                    <td>90,5 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">17.</td>
+                    <td>Vtedy na Západe</td>
+                    <td>1968</td>
+                    <td>90,5 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">18.</td>
+                    <td>Temný rytier</td>
+                    <td>2008</td>
+                    <td>90,4 &#37</td>
+                </tr>
+                <tr>
+                    <td class="poradie">19.</td>
+                    <td>Gran Torino</td>
+                    <td>2008</td>
+                    <td>90,3 &#37</td>
+                </tr>
+                <tr class="podfarbenie">
+                    <td class="poradie">20.</td>
+                    <td>Matrix</td>
+                    <td>1999</td>
+                    <td>90,2 &#37</td>
+                </tr>
+            </tbody>
+        </table><br>
 
-
+        <h2>Top film: Vykúpenie z väznice Shawshank</h2>
+       <img src="shawshank.jpg" alt="Vykúpenie z väznice Shawshank" width="400px" class="float"> <p>Mladého a úspešného viceprezidenta banky Andyho Dufresnea (Tim Robbins) v roku 1946 odsúdia na doživotie za vraždu svojej manželky a jej milenca. On sám síce tvrdí, že je nevinný, ale nedokáže to na súde preukázať. Dostane sa do väznice Shawshank, kde sú všetci na doživotie. Dočká sa šikanovania, depresií, tvrdej práce, ale postupne sa adaptuje a spriatelí sa s Redom (Morgan Freeman), černošským väzňom, ktorý ako jediný priznáva, že je vinný. Po nejakom čase pomôže Andy jednému dozorcovi vyriešiť problém s daňovým priznaním. A netrvá dlho a stane sa vyhľadávaným daňovým poradcom nielen všetkých dozorcov, ale predovšetkým riaditeľa väznice, pokryteckého a zákerného Nortona (Bob Gunton). S Andyho pomocou rozbehne Norton neuveriteľné finančné machinácie a podnikateľské aktivity, na ktorých fantasticky zarába. Andy sa tak stane prominentným väzňom. Nečakaný obrat nastane vo chvíli, keď jeden z nových väzňov, mladý Tommy, rozpráva Andymu o človeku, s ktorým sedel v inej väznici, a ten sa priznal, že zavraždil Andyho ženu a jej milenca. Andy chce okamžite obnoviť svoj proces, ale narazí na tvrdý odpor riaditeľa Nortona. Ten si nemôže dovoliť o Andyho prísť, ale nielen pre svoje kšefty, ale ja zo strachu, že Andy by mohol na slobode prehovoriť o riaditeľových podvodoch. Andy sa tak znovu ocitne na dne, ale nie je taký hlúpy, ani bezmocný, ako si Norton myslí. Dokáže totiž využiť svoje schopnosti finančného poradcu najmä pre seba, a tak má teraz v rukách kľúč k veľkému majetku. Po celý čas si tiež tajne kope dieru, aby z väznice ušiel...</p>
+    
+    </main>
 </body>
 </html>

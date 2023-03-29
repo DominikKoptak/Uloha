@@ -5,16 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'NotoSerif';
+            src: url(../Fonts/NotoSerif-Regular.ttf);
+        }
+        
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: #002B5B;
+        }
+    
+        body{
+            font-family: 'NotoSerif';
+            background-color:#E4DCCF;
+            color: #002B5B;    
+        }
+        main{
+            margin: 10px;
+            border: 10px;
+        }
+        nav ul li{ 
+            list-style: none;
+            display: inline-block;
+            float: left;
+            line-height: 60px;
+        }
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+            color: #F9F5EB;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #EA5455;
+        }
+        main li{
+            margin-left: 40px;
+        }
+        .michelle{
+            color: lightcoral;
+        }
+        .ke{
+            color: navy;
+        }
+        .stephanie{
+            color: teal;
+        }
+    </style>
 </head>
 <body>
-    <a href="../">Domov</a>
-    <h1>Všetko, všade, naraz</h1>
-    <h2>O filme</h2>
-    <p><b>Žena v strednom veku</b> sa nudí so svojím manželom, začína neznášať svojho otca a veľmi si nerozumie s dcérou, ktorá zase pre zmenu začína neznášať ju. Jej práčovňa smeruje ku krachu a úradníčka z finančného úradu jej k tomu hodila na krk daňové priznanie. Práve sedí na daňovom, keď sa zrazu objaví jej manžel z inej dimenzie a ukáže jej, že má stovky ďalších paralelných životov a nie každý z nich je takýto naprd. Vedľa seba totiž existuje množstvo paralelných vesmírov a všetkým teraz hrozí smrteľné nebezpečenstvo. Na hlavnú hrdinku tak čaká niečo ešte desivejšie, než sú dane, pretože <u> jedine ona môže zlo s veľkým „Z“ zastaviť. </u> Má totiž schopnosť prestupovať alternatívnymi vesmírmi, nasávať z nich schopnosti a zručnosti svojich paralelných ja a tie potom použiť na záchranu všetkých svetov. V jednom je filmovou hviezdou, v inom kuchárkou, v ďalšom majsterkou kung-fu, niekde má namiesto prstov párky, inde si úradníčku z finančného úradu vzala za ženu a niekde je zase obyčajným kameňom. Na všetky svoje ja sa môže napojiť a žiť naraz nespočetné množstvo rozličných životov.</p>
-    <h2>Herci</h2>
-    <p><span style="color: lightcoral;">Michelle Yeoh </span></p>
-    <p><span style="color: navy;">Ke Huy Quan</span></p>
-    <p><span style="color: teal;">Stephanie Hsu</span></p>
-    
+    <nav>
+        <ul>
+            <li><a href="../">Domov</a></li>
+            <li><a href="rebricek.html">Rebríček najlepších filmov</a></li>
+            <li><a href="add-review.html">Pridať recenziu</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h1>Všetko, všade, naraz</h1>
+        <h2>O filme</h2>
+        <p><b>Žena v strednom veku</b> sa nudí so svojím manželom, začína neznášať svojho otca a veľmi si nerozumie s dcérou, ktorá zase pre zmenu začína neznášať ju. Jej práčovňa smeruje ku krachu a úradníčka z finančného úradu jej k tomu hodila na krk daňové priznanie. Práve sedí na daňovom, keď sa zrazu objaví jej manžel z inej dimenzie a ukáže jej, že má stovky ďalších paralelných životov a nie každý z nich je takýto naprd. Vedľa seba totiž existuje množstvo paralelných vesmírov a všetkým teraz hrozí smrteľné nebezpečenstvo. Na hlavnú hrdinku tak čaká niečo ešte desivejšie, než sú dane, pretože <u> jedine ona môže zlo s veľkým „Z“ zastaviť. </u> Má totiž schopnosť prestupovať alternatívnymi vesmírmi, nasávať z nich schopnosti a zručnosti svojich paralelných ja a tie potom použiť na záchranu všetkých svetov. V jednom je filmovou hviezdou, v inom kuchárkou, v ďalšom majsterkou kung-fu, niekde má namiesto prstov párky, inde si úradníčku z finančného úradu vzala za ženu a niekde je zase obyčajným kameňom. Na všetky svoje ja sa môže napojiť a žiť naraz nespočetné množstvo rozličných životov.</p>
+        <h2>Herci</h2>
+        <ul>
+            <li class="michelle">Michelle Yeoh</li>
+            <li class="ke">Ke Huy Quan</li>
+            <li class="stephanie">Stephanie Hsu</li>
+        </ul>
+    </main>
 </body>
 </html>

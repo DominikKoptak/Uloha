@@ -5,12 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'NotoSerif';
+            src: url(Fonts/NotoSerif-Regular.ttf);
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: #002B5B;
+        }
+    
+        body{
+            font-family: 'NotoSerif';
+            background-color:#E4DCCF;
+            color: #002B5B;
+            
+            
+        }
+        main{
+            margin: 10px;
+            border: 10px;
+        }
+        ul li{ 
+            list-style: none;
+            display: inline-block;
+            float: left;
+            line-height: 60px;
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            color: #F9F5EB;
+            padding: 0 20px;
+            font-weight: bold;
+            
+        }
+        ul li a:hover {
+            color: #EA5455;
+        }
+        a{
+            color: #002B5B;
+        }
+        main p{
+            margin: 10px 5px;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
-    <a href="pages/rebricek.html">Rebríček najlepších filmov</a>
-    <h1>Filmy, čo mám rád</h1>
-    <p> <a href="pages/movie1.html">Všetko, všade, naraz</a> - skvelé bizarné, no vtipné scény s úžasným retro strihom a efektami</p>
-    <p>Parazit - zaujímavá dráma na zamyslenie, kto je vlastne skutočný parazit v našej spoločnosti, s pár zvratmi</p>
-    <p>Amélia z Montmartru - výborná originálna francúzska komédia so skvelou hudbou</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="pages/rebricek.html">Rebríček najlepších filmov</a></li>
+            <li><a href="pages/add-review.html">Pridať recenziu</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h1>Filmy, čo mám rád</h1>
+        <p> <a href="pages/movie1.html">Všetko, všade, naraz</a> - skvelé bizarné, no vtipné scény s úžasným retro strihom a efektami</p>
+        <p>Parazit - zaujímavá dráma na zamyslenie, kto je vlastne skutočný parazit v našej spoločnosti, s pár zvratmi</p>
+        <p>Amélia z Montmartru - výborná originálna francúzska komédia so skvelou hudbou</p>
+    </main>
 </body>
 </html>
