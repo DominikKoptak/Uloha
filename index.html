@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&display=swap" rel="stylesheet">
 
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        @font-face {
+         @font-face {
             font-family:'NotoSerif';
             src: url(Fonts/NotoSerif-Regular.ttf);
         }
@@ -29,8 +32,6 @@
             
         }
         main{
-            margin: 10px;
-            border: 10px;
             text-align: center;
         }
         ul li{ 
@@ -56,7 +57,36 @@
         main p{
             margin: 10px 5px;
         }
-
+        .banner{
+            background-image: url(movie_pic1.jpg);
+            color: #F9F5EB;
+            margin: 0;
+            border: 0;
+            height: 150px;
+            font-family: 'BioRhyme Expanded', serif;
+        }
+        .text{
+            background-color: #002a5b6b;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        div h1{
+            text-transform: uppercase;
+        }
+        div button{
+            color: #002B5B;
+            font-weight: bold;
+            background-color: #E4DCCF;
+            border-radius: 9px;
+            font-family: 'BioRhyme Expanded', serif;
+            display: block;
+            margin: auto;
+        }
+        div button:hover{
+            color: #EA5455;
+            cursor: pointer;
+        }
 
 
     </style>
@@ -71,6 +101,13 @@
             </ul>
     </nav>
     <main>
+        <div class="banner">
+            <div class="text">
+                <h1>Všetko, všade, naraz</h1>
+                <p>skvelé bizarné, no vtipné scény  s úžasným retro strihom a efektami</p>
+            </div>
+            <button onclick="window.location.href='pages/movie1.html'"><h2>Odkaz na film</h2></button>
+        </div>
         <h1>Filmy, čo mám rád</h1>
         <article><p> <a href="pages/movie1.html">Všetko, všade, naraz</a> - skvelé bizarné, no vtipné scény s úžasným retro strihom a efektami</p>
             <p>Parazit - zaujímavá dráma na zamyslenie, kto je vlastne skutočný parazit v našej spoločnosti, s pár zvratmi</p>
