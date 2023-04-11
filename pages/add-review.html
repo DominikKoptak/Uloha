@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         *{
             margin: 0;
@@ -94,8 +95,57 @@
             width: 50%;
             height: 50px;
             margin: 10px 103px;     
+            font-size: large;
+            font-weight: 600;
+            border: solid #E4DCCF 1px;
         }
-
+        .submit:hover{
+            color: #EA5455;
+            cursor: pointer;
+        }
+        #obrazec{
+            position: relative;
+            margin: auto;
+            margin-top: 50px;
+            width: 140px;
+            height: 140px;
+        }
+        #zeleny{
+            margin-left: 20px;
+            border: solid green 10px;
+            width: 100px;
+            height: 100px;
+            z-index: -4;
+            position: absolute;
+        }
+        #modry{
+            border: solid blue 10px;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+            z-index: -2;
+            position: absolute;
+        }
+        #cerveny{
+            border: solid red 10px;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+            position: absolute;
+        }
+        #oranzovy{
+            border: solid orange 10px;
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            z-index: -2;
+            position: absolute;
+        }
+        h1{
+            margin-right: 180px;
+            display: inline;
+        }
     </style>
 </head>
 <body>
@@ -110,6 +160,8 @@
         <br>
         <form action="" method="get">
             <h1>Recenzia filmu</h1>
+            <span class="material-symbols-outlined">
+                rate_review</span><br>
             <label for="film">Názov filmu</label>
             <input type="text" name="film" id="film" required >
             <label for="meno">Meno/nick</label>
@@ -157,6 +209,12 @@
             <input type="submit" value="Odosľať" class="submit">
 
         </form>
+        <div id="obrazec">
+            <div id="zeleny"></div>
+            <div id="cerveny"></div>
+            <div id="oranzovy"></div>
+            <div id="modry"></div>
+        </div>
     </main>
 </body>
 </html>
