@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
         *{
             margin: 0;
@@ -18,11 +20,18 @@
         
         nav{
             width: 100%;
-            height: 60px;
+            height: fit-content;
             background-color: #002B5B;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        }
+        .checkbtn{
+            color: #F9F5EB;
+            font-size: x-large;
+            cursor: pointer;
+            display: none;
+            margin-left: 10px;
+        }
+        #check{
+            display: none;
         }
     
         body{
@@ -34,22 +43,17 @@
             margin: auto;
             border: 10px;
             text-align: center;
-            width: 50%;
         }
-        nav ul li{ 
-            list-style: none;
-            display: inline-block;
-            float: left;
+        nav a{ 
             line-height: 60px;
+            float: left;
         }
-        nav ul li a{
-            display: block;
+        nav a{
             text-decoration: none;
             color: #F9F5EB;
-            padding: 0 20px;
             font-weight: bold;
         }
-        nav ul li a:hover {
+        nav a:hover{
             color: #EA5455;
         }
         main li{
@@ -81,12 +85,6 @@
         main ul {
            text-align: left;
         }
-        svg{
-            float: right;
-        }
-        iframe{
-            margin-left: 200px;
-        }
         .infosiconami{
             text-align: left;
         }
@@ -99,80 +97,105 @@
         .nazovfilmu{
             text-shadow: 1px 1px 5px #EA5455;
         }
+        @media screen and (max-width: 600px) {
+            iframe{
+                width: 100%;
+            }
+            
+        }
+
 
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="../">Domov</a></li>
-            <li><a href="rebricek.html">Rebríček najlepších filmov</a></li>
-            <li><a href="add-review.html">Pridať recenziu</a></li>
-            </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars fa-lg"></i></label>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-1"><a href="index.html">Domov</a></div>
+                <div class="col-12 col-xl-3"><a href="rebricek.html">Rebríček najlepších filmov</a></div>
+                <div class="col-12 col-xl-3"><a href="add-review.html">Pridať recenziu</a></div>
+            </div></div>
     </nav>
     <main>
-        <h1 class="nazovfilmu">Všetko, všade, naraz</h1>
-        <h2>O filme</h2>
-        <p><b>Žena v strednom veku</b> sa nudí so svojím manželom, začína neznášať svojho otca a veľmi si nerozumie s dcérou, ktorá zase pre zmenu začína neznášať ju. Jej práčovňa smeruje ku krachu a úradníčka z finančného úradu jej k tomu hodila na krk daňové priznanie. Práve sedí na daňovom, keď sa zrazu objaví jej manžel z inej dimenzie a ukáže jej, že má stovky ďalších paralelných životov a nie každý z nich je takýto naprd. Vedľa seba totiž existuje množstvo paralelných vesmírov a všetkým teraz hrozí smrteľné nebezpečenstvo. Na hlavnú hrdinku tak čaká niečo ešte desivejšie, než sú dane, pretože <u> jedine ona môže zlo s veľkým „Z“ zastaviť. </u> Má totiž schopnosť prestupovať alternatívnymi vesmírmi, nasávať z nich schopnosti a zručnosti svojich paralelných ja a tie potom použiť na záchranu všetkých svetov. V jednom je filmovou hviezdou, v inom kuchárkou, v ďalšom majsterkou kung-fu, niekde má namiesto prstov párky, inde si úradníčku z finančného úradu vzala za ženu a niekde je zase obyčajným kameňom. Na všetky svoje ja sa môže napojiť a žiť naraz nespočetné množstvo rozličných životov.</p>
-        <h2>Herci</h2>
-        <ul class="herci">
-            <li class="michelle">Michelle Yeoh</li>
-            <li class="ke">Ke Huy Quan</li>
-            <li class="stephanie">Stephanie Hsu</li>
-        </ul>
-        <svg width="200" height="500">
-            <circle cx="100" cy="100" r="40" fill="rgb(243, 169, 139)"/>
-            <circle cx="85" cy="100" r="8" stroke="black"/>
-            <circle cx="100" cy="85" r="4" stroke="white"/>
-            <circle cx="100" cy="85" r="3" fill="white"/>
-            <circle cx="100" cy="85" r="2" stroke="white"/>
-            <circle cx="115" cy="100" r="8" stroke="black"/>
-            <circle cx="85" cy="100" r="8" fill="white"/>
-            <circle cx="115" cy="100" r="8" fill="white"/>
-            <circle cx="85" cy="100" r="4" fill="black"/>
-            <circle cx="115" cy="100" r="4" fill="black"/>
-
-            <rect width="10" height="2" x="97" y="125" fill="black"/>
-
-            <polygon points="100,50 50,200 50,80" style="fill: rgb(5, 13, 32);"/>
-            <polygon points="100,50 150,200 150,80" style="fill: rgb(5, 13, 32);"/>
-
-            <rect width="25" height="13" x="89" y="140" fill="rgb(243, 169, 139)"/>
-            <rect width="100" height="165" x="52" y="150" fill="rgb(168, 9, 83)"/>
-            <rect width="35" height="150" x="20" y="150" fill="rgb(175, 95, 182)"/>
-            <rect width="35" height="150" x="150" y="150" fill="rgb(175, 95, 182)"/>
-            <rect width="40" height="180" x="115" y="310" fill="rgb(86, 6, 133)"/>
-            <rect width="40" height="180" x="50" y="310" fill="rgb(86, 6, 133)"/>
-          </svg>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v6oCMeLodKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe><br>
-        <div class="infosiconami">
-            <span class="material-symbols-outlined">
-                movie</span>
-            <h2>Réžia</h2>
-            <ul>
-                <li>Dan Kwan</li>
-                <li>Daniel Scheinert</li>
-            </ul>
-            <span class="material-symbols-outlined">
-                description</span>
-            <h2>Scénár</h2>
-            <ul>
-                <li>Dan Kwan</li>
-                <li>Daniel Scheinert</li>
-            </ul>
-            <span class="material-symbols-outlined">
-                videocam</span>
-            <h2>Kamera</h2>
-            <ul>
-                <li>Larkin Seiple</li>
-            </ul>
-            <span class="material-symbols-outlined">
-                music_note</span>
-            <h2>Hudba</h2>
-            <ul>
-                <li>Son Lux</li>
-            </ul>
-        </div>
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12"><h1 class="nazovfilmu">Všetko, všade, naraz</h1></div></div></div>
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-12"><h2>O filme</h2></div></div></div>
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-12"><p><b>Žena v strednom veku</b> sa nudí so svojím manželom, začína neznášať svojho otca a veľmi si nerozumie s dcérou, ktorá zase pre zmenu začína neznášať ju. Jej práčovňa smeruje ku krachu a úradníčka z finančného úradu jej k tomu hodila na krk daňové priznanie. Práve sedí na daňovom, keď sa zrazu objaví jej manžel z inej dimenzie a ukáže jej, že má stovky ďalších paralelných životov a nie každý z nich je takýto naprd. Vedľa seba totiž existuje množstvo paralelných vesmírov a všetkým teraz hrozí smrteľné nebezpečenstvo. Na hlavnú hrdinku tak čaká niečo ešte desivejšie, než sú dane, pretože <u> jedine ona môže zlo s veľkým „Z“ zastaviť. </u> Má totiž schopnosť prestupovať alternatívnymi vesmírmi, nasávať z nich schopnosti a zručnosti svojich paralelných ja a tie potom použiť na záchranu všetkých svetov. V jednom je filmovou hviezdou, v inom kuchárkou, v ďalšom majsterkou kung-fu, niekde má namiesto prstov párky, inde si úradníčku z finančného úradu vzala za ženu a niekde je zase obyčajným kameňom. Na všetky svoje ja sa môže napojiť a žiť naraz nespočetné množstvo rozličných životov.</p></div></div></div>
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-12"><h2>Herci</h2></div></div></div>
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-12"><ul class="herci">
+                    <li class="michelle">Michelle Yeoh</li>
+                    <li class="ke">Ke Huy Quan</li>
+                    <li class="stephanie">Stephanie Hsu</li>
+                </ul></div></div></div>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-12 col-xl-6"><svg width="200" height="500">
+                        <circle cx="100" cy="100" r="40" fill="rgb(243, 169, 139)"/>
+                        <circle cx="85" cy="100" r="8" stroke="black"/>
+                        <circle cx="100" cy="85" r="4" stroke="white"/>
+                        <circle cx="100" cy="85" r="3" fill="white"/>
+                        <circle cx="100" cy="85" r="2" stroke="white"/>
+                        <circle cx="115" cy="100" r="8" stroke="black"/>
+                        <circle cx="85" cy="100" r="8" fill="white"/>
+                        <circle cx="115" cy="100" r="8" fill="white"/>
+                        <circle cx="85" cy="100" r="4" fill="black"/>
+                        <circle cx="115" cy="100" r="4" fill="black"/>
+        
+                        <rect width="10" height="2" x="97" y="125" fill="black"/>
+        
+                        <polygon points="100,50 50,200 50,80" style="fill: rgb(5, 13, 32);"/>
+                        <polygon points="100,50 150,200 150,80" style="fill: rgb(5, 13, 32);"/>
+        
+                        <rect width="25" height="13" x="89" y="140" fill="rgb(243, 169, 139)"/>
+                        <rect width="100" height="165" x="52" y="150" fill="rgb(168, 9, 83)"/>
+                        <rect width="35" height="150" x="20" y="150" fill="rgb(175, 95, 182)"/>
+                        <rect width="35" height="150" x="150" y="150" fill="rgb(175, 95, 182)"/>
+                        <rect width="40" height="180" x="115" y="310" fill="rgb(86, 6, 133)"/>
+                        <rect width="40" height="180" x="50" y="310" fill="rgb(86, 6, 133)"/>
+                    </svg></div>
+                    <div class="col-12 col-xl-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/v6oCMeLodKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>
+                </div></div>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-12"><div class="infosiconami">
+                        <span class="material-symbols-outlined">
+                            movie</span>
+                        <h2>Réžia</h2>
+                        <ul>
+                            <li>Dan Kwan</li>
+                            <li>Daniel Scheinert</li>
+                        </ul>
+                        <span class="material-symbols-outlined">
+                            description</span>
+                        <h2>Scénár</h2>
+                        <ul>
+                            <li>Dan Kwan</li>
+                            <li>Daniel Scheinert</li>
+                        </ul>
+                        <span class="material-symbols-outlined">
+                            videocam</span>
+                        <h2>Kamera</h2>
+                        <ul>
+                            <li>Larkin Seiple</li>
+                        </ul>
+                        <span class="material-symbols-outlined">
+                            music_note</span>
+                        <h2>Hudba</h2>
+                        <ul>
+                            <li>Son Lux</li>
+                        </ul>
+                    </div></div></div></div>
     </main>
 </body>
 </html>
