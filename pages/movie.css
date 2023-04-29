@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'NotoSerif';
+    src: url(../Fonts/NotoSerif-Regular.ttf);
+}
+
+nav{
+    width: 100%;
+    height: fit-content;
+    background-color: #002B5B;
+}
+.checkbtn{
+    color: #F9F5EB;
+    font-size: x-large;
+    cursor: pointer;
+    display: none;
+    margin-left: 10px;
+}
+#check{
+    display: none;
+}
+
+body{
+    font-family: 'NotoSerif';
+    background-color:#E4DCCF;
+    color: #002B5B;    
+}
+main{
+    margin: auto;
+    border: 10px;
+    text-align: center;
+}
+nav a{ 
+    line-height: 60px;
+    float: left;
+}
+nav a{
+    text-decoration: none;
+    color: #F9F5EB;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #EA5455;
+}
+main li{
+    margin-left: 40px;
+}
+.michelle{
+    color: lightcoral;
+    
+}
+.michelle::before{
+    content:url(../Pics/woman_FILL0_wght400_GRAD0_opsz48.svg);
+}
+.ke{
+    color: navy;
+}
+.ke::before{
+    content: url(../Pics/man_FILL0_wght400_GRAD0_opsz48.svg)
+
+}
+.stephanie{
+    color: teal;
+}
+.stephanie::before{
+    content: url(../Pics/woman_FILL0_wght400_GRAD0_opsz48.svg);
+}
+h2{
+    text-align: left;
+}
+main ul {
+   text-align: left;
+}
+.infosiconami{
+    text-align: left;
+}
+.infosiconami h2{
+    display: inline;
+}
+.material-symbols-outlined{
+    display: inline;
+}
+.nazovfilmu{
+    text-shadow: 1px 1px 5px #EA5455;
+}
+@media screen and (max-width: 600px) {
+    iframe{
+        width: 100%;
+    }
+    
+}

@@ -6,180 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominik Kopták</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        table{
-            border-collapse: collapse;
-            margin: auto;
-        }
-        td{
-            border: solid black 2px;
-        }
-        th{
-                padding: 10px;
-                border: solid black 3px;
-                background-color:#002B5B;
-                color: #E4DCCF;
-        }
-        .poradie{
-            text-align: right;
-        }
-        .podfarbenie{
-            background-color: #ea54545e;
-        }
-        .zelena{
-            background-color: rgba(77, 126, 48, 0.76);
-        }
-        p{
-            display: inline;
-        }
-        .float{
-            float: left;
-            margin-right: 8px;
-            margin-bottom: 1px;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        @font-face {
-            font-family: 'NotoSerif';
-            src: url(../Fonts/NotoSerif-Regular.ttf);
-        }
-        nav{
-            width: 100%;
-            height: 60px;
-            background-color: #002B5B;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .checkbtn{
-            color: #F9F5EB;
-            font-size: x-large;
-            cursor: pointer;
-            display: none;
-            margin-left: 10px;
-        }
-        #check{
-            display: none;
-        }
-    
-        body{
-            font-family: 'NotoSerif';
-            background-color:#E4DCCF;
-            color: #002B5B;    
-        }
-        main{
-            margin: auto;
-            border: 10px;
-            width: 50%;
-            text-align: center;
-        }
-        nav ul li{ 
-            list-style: none;
-            display: inline-block;
-            float: left;
-            line-height: 60px;
-        }
-        nav ul li a{
-            display: block;
-            text-decoration: none;
-            color: #F9F5EB;
-            padding: 0 20px;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #EA5455;
-        }
-        h2{
-            margin-bottom: 5px;
-        }
-        nav audio{
-            float: right;
-            margin-right: 5px;
-        }
-        .tooltip{
-            position: relative;
-            cursor: pointer;
-           
-        }
-        .tooltiptext{
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            padding: 5px 0;
-            border-radius: 6px;
-            position: absolute;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 3s;
-            
-        }
-        td:hover .tooltiptext{
-            opacity: 1;
-        }
-        .tooltiptext img{
-            width: 200px;
-        }
-        @media screen and (max-width: 570px) {
-            nav ul{
-                position: fixed;
-                width: 100%;
-                height: 100vh;
-                background: #002B5B;
-                top: -100%;
-                left: 0;
-                text-align: center;
-                transition: all .5s;
-                border-top: #E4DCCF solid 3px;
-                flex-direction: column;
-            }
-            nav ul li{
-                display: block;
-                width: 100%;
-            }
-            nav ul li a{
-                font-size: x-large;
-                border: #EA5455 solid 2px;
-                margin: 15%;
-            }
-            .checkbtn{
-                display: block;
-            }
-            #check:checked ~ ul{
-                top: 60px;
-                z-index: 10;
-            }
-            
-        }
-        @media screen and (max-width: 850px){
-            nav ul{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            nav audio{
-                display: none;
-            }
-            nav ul li a{
-                font-size: x-large;
-            }
-        }
-        @media screen and (max-width:720px){
-            nav ul{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            nav ul li a{
-                font-size: large;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <nav>
@@ -195,7 +23,7 @@
             </audio>
     </nav>
     <main>
-        <h1>Rebríček najlepších filmov</h1>
+        <h1 id="nazovtabulky">Rebríček najlepších filmov</h1>
             <table>
                 <thead>
                     <tr>
@@ -329,7 +157,7 @@
                 </tbody>
             </table><br>
         <section><h2>Top film: Vykúpenie z väznice Shawshank</h2>
-            <img src="shawshank.jpg" alt="Vykúpenie z väznice Shawshank" width="400" class="float"> <p>Mladého a úspešného viceprezidenta banky Andyho Dufresnea (Tim Robbins) v roku 1946 odsúdia na doživotie za vraždu svojej manželky a jej milenca. On sám síce tvrdí, že je nevinný, ale nedokáže to na súde preukázať. Dostane sa do väznice Shawshank, kde sú všetci na doživotie. Dočká sa šikanovania, depresií, tvrdej práce, ale postupne sa adaptuje a spriatelí sa s Redom (Morgan Freeman), černošským väzňom, ktorý ako jediný priznáva, že je vinný. Po nejakom čase pomôže Andy jednému dozorcovi vyriešiť problém s daňovým priznaním. A netrvá dlho a stane sa vyhľadávaným daňovým poradcom nielen všetkých dozorcov, ale predovšetkým riaditeľa väznice, pokryteckého a zákerného Nortona (Bob Gunton). S Andyho pomocou rozbehne Norton neuveriteľné finančné machinácie a podnikateľské aktivity, na ktorých fantasticky zarába. Andy sa tak stane prominentným väzňom. Nečakaný obrat nastane vo chvíli, keď jeden z nových väzňov, mladý Tommy, rozpráva Andymu o človeku, s ktorým sedel v inej väznici, a ten sa priznal, že zavraždil Andyho ženu a jej milenca. Andy chce okamžite obnoviť svoj proces, ale narazí na tvrdý odpor riaditeľa Nortona. Ten si nemôže dovoliť o Andyho prísť, ale nielen pre svoje kšefty, ale ja zo strachu, že Andy by mohol na slobode prehovoriť o riaditeľových podvodoch. Andy sa tak znovu ocitne na dne, ale nie je taký hlúpy, ani bezmocný, ako si Norton myslí. Dokáže totiž využiť svoje schopnosti finančného poradcu najmä pre seba, a tak má teraz v rukách kľúč k veľkému majetku. Po celý čas si tiež tajne kope dieru, aby z väznice ušiel...</p>
+            <img src="shawshank.jpg" alt="Vykúpenie z väznice Shawshank" width="400" class="float"> <p class="popis.filmu">Mladého a úspešného viceprezidenta banky Andyho Dufresnea (Tim Robbins) v roku 1946 odsúdia na doživotie za vraždu svojej manželky a jej milenca. On sám síce tvrdí, že je nevinný, ale nedokáže to na súde preukázať. Dostane sa do väznice Shawshank, kde sú všetci na doživotie. Dočká sa šikanovania, depresií, tvrdej práce, ale postupne sa adaptuje a spriatelí sa s Redom (Morgan Freeman), černošským väzňom, ktorý ako jediný priznáva, že je vinný. Po nejakom čase pomôže Andy jednému dozorcovi vyriešiť problém s daňovým priznaním. A netrvá dlho a stane sa vyhľadávaným daňovým poradcom nielen všetkých dozorcov, ale predovšetkým riaditeľa väznice, pokryteckého a zákerného Nortona (Bob Gunton). S Andyho pomocou rozbehne Norton neuveriteľné finančné machinácie a podnikateľské aktivity, na ktorých fantasticky zarába. Andy sa tak stane prominentným väzňom. Nečakaný obrat nastane vo chvíli, keď jeden z nových väzňov, mladý Tommy, rozpráva Andymu o človeku, s ktorým sedel v inej väznici, a ten sa priznal, že zavraždil Andyho ženu a jej milenca. Andy chce okamžite obnoviť svoj proces, ale narazí na tvrdý odpor riaditeľa Nortona. Ten si nemôže dovoliť o Andyho prísť, ale nielen pre svoje kšefty, ale ja zo strachu, že Andy by mohol na slobode prehovoriť o riaditeľových podvodoch. Andy sa tak znovu ocitne na dne, ale nie je taký hlúpy, ani bezmocný, ako si Norton myslí. Dokáže totiž využiť svoje schopnosti finančného poradcu najmä pre seba, a tak má teraz v rukách kľúč k veľkému majetku. Po celý čas si tiež tajne kope dieru, aby z väznice ušiel...</p>
          </section>
     </main>
 </body>

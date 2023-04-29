@@ -1,0 +1,16 @@
+$blue: #002B5B;
+$cream: #E4DCCF;
+
+table {
+    td{
+        border: solid black 2px;
+    }
+    th{
+        padding: 10px;
+        border: solid black 3px;
+        background-color:$blue;
+        color: $cream;
+    }
+    border-collapse: collapse;
+    margin: auto;
+}
